@@ -42,7 +42,10 @@ this.createjs = this.createjs || {};
         }
 
         this[scale] = this._rate * (this.maxValue / originValue);
-       
+    }
+
+    p.addProgress = function (rate) {
+        this.setProgress(this._rate + rate);
     }
 
     ZzLoadBar.HORIZONTSL = 1;
